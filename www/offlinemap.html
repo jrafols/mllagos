@@ -5,11 +5,18 @@
 <title>Mobifreaks Classic - Iphone | Android | High End Touch</title>
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 <meta http-equiv="keywords" content="free mobile website templates, free mobile website template, free iphone template, free android template, free high end touch mobile templates" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
- <script src="zoom/jquery-1.7.2.min.js"></script>
-<script src="zoom/hammer.js"></script>
-<script src="zoom/jquery.hammer.js"></script>
-<script src="zoom/myLogic.js"></script><link href="css/style.css"rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<script type="application/javascript" src="zoom/iscroll.js"></script>
+
+<script type="text/javascript">
+var myScroll;
+function loaded() {
+myScroll = new iScroll('wrapper',
+{ zoom:true, zoomMax: 4 });
+}
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
 <link href="css/style.css"rel="stylesheet" type="text/css" />
 <link href="zoom/stylezoom.css"rel="stylesheet" type="text/css" />
 </head>
@@ -18,13 +25,10 @@
 <div class="logo"><h1><a href="index.html"><img src="images/logo.png" alt="logo" /></a></h1></div>
 <h2 class="head">Blog</h2>
 <div class="content">
-<div id="zoomwrapper">
-    <div id="zoom" class="zoomProps" >
-        <div class="polaroid">
+<div id="wrapper" style="width:100%">
             <img src="images/mapa_penedes.png" alt="" width="1000" height="1000" />
-            <span>Coco</span>
-        </div>
-    </div>
+     
+</div>
 </div>
 <div class="footer">
 <div class="menu">
@@ -34,5 +38,6 @@
     <div class="clear"></div>
 <p>Disseny<a href="http://www.masllagostera.com">JRB-CSB</a></p>
 </div>
+
 </body>
 </html>
